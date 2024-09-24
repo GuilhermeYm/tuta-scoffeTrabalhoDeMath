@@ -55,7 +55,7 @@ body {
 
 .bannerContainer { 
     height: 70vh;
-    background:url("wallpaperbannerdefinitivo.jpeg");
+    background:url("assets/wallpaperbannerdefinitivo.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
