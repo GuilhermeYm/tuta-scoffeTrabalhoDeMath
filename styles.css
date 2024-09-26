@@ -28,6 +28,8 @@ body {
 /* :root { 
 } */
 
+
+
 /* Header */
 
 .navbarContainer { 
@@ -95,14 +97,63 @@ body {
 
 
 .coffe-container { 
-    width: 20%;
-    padding:1rem;
+    width: 250px;
+    padding:2rem;
     background-color: var(--cafe-medio);
     color:var(--leite);
     border:1px solid var(--cafe-escuro);
     border-radius: 10px;
-    margin:0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 370px;
+    position:relative;
 }
+
+.containerToCenter { 
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+}
+
+.imageChartCoffe { 
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.imageChartCoffe, .descriptionContainer {
+    position:absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hidden { 
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.invisible { 
+    display: none;
+}
+
+.active { 
+    opacity: 1;
+    visibility: visible;
+}
+
+.descriptionContainer { 
+    top: calc(70px + 40px);
+}
+
+.imageChartCoffe.hidden {
+    opacity: 0;
+    display:hidden;
+}
+
 
 .titleCoffe { 
     font-size: 1.5rem;
@@ -119,12 +170,15 @@ body {
 
 .descriptionContainer { 
     list-style: none;
+    transition: all 0.5s ease-in-out;
+    margin-left: 10px;
 }
 
 .descriptionCoffe { 
     padding-left: 1rem;
     list-style: none;
     margin-top:5px;
+    width: 95%;
 }
 
 /* Footer */
